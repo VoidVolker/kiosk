@@ -32,8 +32,17 @@ Windows Registry Editor Version 5.00
 "Shell"="C:\\full\\path\\to\\your\\application.exe>"
 
 ``` 
+Autologin for kiosk user:
+```
+Windows Registry Editor Version 5.00
 
-
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon] 
+"AutoAdminLogon"="1"
+"ForceAutoLogon"="1"
+"DefaultUserName"="kiosk"
+"DefaultDomainName"="<place here pc hostname>"
+"DefaultPassword"=""
+```
 
 * _[Option]_ If you need to disable Ctrl+Alt+Del, then use this registry key value ("") or you can place there own application:
 
