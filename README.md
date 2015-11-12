@@ -14,16 +14,28 @@ Linux kiosk mode need next steps:
 # Windows
 Windows kiosk mode need next steps:
 * Create user for kiosk mode
-* Set next registry key for this user as path to your programm:
+* Set next registry key for this user as path to your application:
 
+Windows XP/7:
 ```
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Winlogon]
-"Shell"="C:\\full\\path\\to\\your\\programm.exe>"
+"Shell"="C:\\full\\path\\to\\your\\application.exe>"
 
 ``` 
-* _[Option]_ If you need to disable Ctrl+Alt+Del, then use this registry key value (""):
+Windows 8 and later:
+```
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+"Shell"="C:\\full\\path\\to\\your\\application.exe>"
+
+``` 
+
+
+
+* _[Option]_ If you need to disable Ctrl+Alt+Del, then use this registry key value ("") or you can place there own application:
 
 ```
 Windows Registry Editor Version 5.00
