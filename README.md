@@ -1,4 +1,6 @@
 # kiosk
+
+[![Join the chat at https://gitter.im/VoidVolker/kiosk](https://badges.gitter.im/VoidVolker/kiosk.svg)](https://gitter.im/VoidVolker/kiosk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Few simple experimental scripts to make kiosk mode
 
 # Linux
