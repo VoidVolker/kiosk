@@ -17,9 +17,12 @@ Linux kiosk mode need next steps:
 # Windows
 Windows kiosk mode need next steps:
 * Create user for kiosk mode
+```
+net user kiosk /ADD
+```
 * Set next registry key for this user as path to your application:
 
-Windows XP/7:
+Windows XP/7/10:
 ```
 Windows Registry Editor Version 5.00
 
@@ -27,7 +30,7 @@ Windows Registry Editor Version 5.00
 "Shell"="C:\\full\\path\\to\\your\\application.exe>"
 
 ``` 
-Windows 8 and later:
+Windows 8:
 ```
 Windows Registry Editor Version 5.00
 
